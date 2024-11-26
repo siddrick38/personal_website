@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Projects</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/signature.png" class="logo" alt="Signature" />
+
+      <!-- navigation bar -->
+      <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="#projects" class="active">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </header>
+    <main id="projects">
+      <h1 class="heading">My <span class="heading-span">Experience</span></h1>
+
+      <div class="project-gallery">
+        <!-- start of project section -->
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <img src="images/search.png" alt="Google icon" class="project-icon" />
+              <h2 class="project-title">Google Search Engine</h2>
+              <p class="project-timeline"><i class="bx bxs-calendar"></i>Winter 2024</p>
+
+              <ul>
+                <li>Built a scalable search engine using information retrieval concepts</li>
+                <li>
+                  Created an inverted index from 3000+ HTML documents using a pipeline of MapReduce
+                  programs
+                </li>
+                <li>Developed a REST API app that returns queried results</li>
+              </ul>
+            </div>
+
+            <div class="project-card-back">
+              <p class="project-info">
+                I built an inverted index using a subset of Wikipedia pages, integrating text
+                analysis (tf-idf) and link analysis (PageRank) via MapReduce for parallel data
+                processing. In addition, I created index servers to query the results based on user
+                input. Finally, I developed a search server utilizing REST API requests to index
+                servers concurrently.
+              </p>
+
+              <ul class="skills-list">
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>SQL</li>
+                <li>MapReduce</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <img src="images/profile.png" alt="Website icon" class="project-icon" />
+              <h2 class="project-title">Personal Website</h2>
+              <p class="project-timeline"><i class="bx bxs-calendar"></i>Winter 2024</p>
+
+              <ul>
+                <li>
+                  Developed a personal website highlighing my personal and professional experiences
+                </li>
+                <li>
+                  Utilized HTML/CSS to design the website's structure and style, while JavaScript
+                  was employed for interactivity
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card-back">
+              <p class="project-info">
+                I built a personal website to showcase my professional experiences and personal
+                hobbies. I created five separate HTML pages: home, skills, projects, hobbies, and
+                contact page. Using CSS, I incorporated transitions and animations for user visual
+                appeal. Finally, I added JavaScript, so users can interact with the page.
+              </p>
+
+              <ul class="skills-list">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Front-End Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <img src="images/settings.png" alt="Setting gears icon" class="project-icon" />
+              <h2 class="project-title">Cache Simulator</h2>
+              <p class="project-timeline"><i class="bx bxs-calendar"></i>Fall 2023</p>
+
+              <ul>
+                <li>Emulated the ARMv8 architecture with a 5-stage pipeline</li>
+                <li>Implemented a set-associative CPU cache with LRU and dirty-bit mechanisms</li>
+                <li>Created a simulator to keep record of the data registers and memory</li>
+              </ul>
+            </div>
+
+            <div class="project-card-back">
+              <p class="project-info">
+                I created a program to simulate set-associate CPU cache, using write-back and
+                allocate on write mechanism. By calculating the block size and blocks per set, I was
+                able to determine the reconfigure the memory address and update the state of memory.
+              </p>
+
+              <ul class="skills-list">
+                <li>C Programming</li>
+                <li>Instruction Set Architecture</li>
+                <li>Cache</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <img src="images/itunes.png" alt="Itunes icon" class="project-icon" />
+              <h2 class="project-title">Music Artist Search</h2>
+              <p class="project-timeline"><i class="bx bxs-calendar"></i>Winter 2024</p>
+
+              <ul>
+                <li>Developed an application to search for music artists</li>
+                <li>Used Vue.js AJAX call to fetch the iTunes API</li>
+                <li>
+                  Created an artist search grid and filtering system by collection name and price
+                  using Bootstrap
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card-back">
+              <p class="project-info">
+                The application features a search bar allowing users to enter keywords, fetching
+                data via AJAX calls and displaying results in a responsive layout using Bootstrap's
+                grid system. Navigation tabs provide detailed information about artists, including
+                track previews. Users can filter results by genre and sort them by collection name
+                or price.
+              </p>
+
+              <ul class="skills-list">
+                <li>Vue.js</li>
+                <li>HTML/CSS</li>
+                <li>Bootstrap</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- end of project section -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
