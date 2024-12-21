@@ -26,8 +26,8 @@ body {
 }
 
 .heading-span {
-  /* color: #1395ff; */
-  color: rgb(234, 229, 229);
+  color: #1395ff;
+  /* color: rgb(234, 229, 229); */
 }
 
 a {
@@ -159,7 +159,7 @@ footer {
 }
 
 .resume-icon {
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .outline-circle {
@@ -363,7 +363,7 @@ footer {
 }
 
 .skills-bar-50 {
-  width: 50%;
+  width: 45%;
   animation: fillBar50 2s ease-out;
 }
 @keyframes fillBar50 {
@@ -371,12 +371,12 @@ footer {
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .skills-bar-60 {
-  width: 60%;
+  width: 55%;
   animation: fillBar60 2s ease-out;
 }
 @keyframes fillBar60 {
@@ -384,12 +384,12 @@ footer {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 55%;
   }
 }
 
 .skills-bar-75 {
-  width: 75%;
+  width: 70%;
   animation: fillBar75 2s ease-out;
 }
 @keyframes fillBar75 {
@@ -397,7 +397,20 @@ footer {
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 70%;
+  }
+}
+
+.skills-bar-100 {
+  width: 85%;
+  animation: fillBar100 2s ease-out;
+}
+@keyframes fillBar100 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
   }
 }
 
@@ -405,12 +418,12 @@ footer {
   width: 110px;
   height: 110px;
   margin: 70px 30px;
-  transition: scale 0.6s;
+  transition: transform 0.6s;
   transition-timing-function: linear;
 }
 
 .skills-info img:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .skills-heading {
@@ -520,16 +533,20 @@ footer {
 .hobbies-gallery .hobbies-box {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
   justify-content: center;
   align-items: center;
   background-color: #001b31;
+  position: relative;
 }
 
-.hobbies-image-left {
+.hobbies-slideshow-left {
   grid-column: 1 / span 3;
+  position: relative;
 }
-.hobbies-image-right {
+.hobbies-slideshow-right {
   grid-column: 2 / span 3;
+  position: relative;
 }
 
 .hobbies-image-left img,
@@ -552,12 +569,50 @@ footer {
 .hobbies-heading {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
-.hobbies-content p,
-.hobbies-content-left p {
+.hobbies-content,
+.hobbies-content-left {
   font-size: 18px;
   line-height: 1.2em;
-  /* text-align: justify; */
+}
+
+.fun-fact li {
+  margin-left: 4%;
+  margin-bottom: 3%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* for center aligning */
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  transition: background-color 0.3s;
+  transition-timing-function: linear;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(256, 256, 256, 1);
+  color: black;
+  border: 1px solid black;
 }

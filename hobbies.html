@@ -20,7 +20,7 @@
 
       <!-- navigation bar -->
       <nav class="navigation">
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
         <a href="#hobbies" class="active">Hobbies</a>
@@ -33,60 +33,181 @@
 
       <div class="hobbies-gallery">
         <div class="hobbies-box">
-          <div class="hobbies-image-left">
-            <img src="images/Legends Dance Competition-0886.JPEG" alt="AI generated image #1" />
+          <!-- slideshow begin -->
+          <div class="hobbies-slideshow-left">
+            <div class="hobbies-image-left slides1">
+              <img src="images/dance_slides/legends_1.JPEG" alt="legends dance image" />
+            </div>
+
+            <div class="hobbies-image-left slides1">
+              <img src="images/dance_slides/dance_mix.jpeg" alt="dance mix image" />
+            </div>
+
+            <div class="hobbies-image-left slides1">
+              <img src="images/dance_slides/adz_show.JPG" alt="adz show image" />
+            </div>
+
+            <div class="hobbies-image-left slides1">
+              <img src="images/dance_slides/legends_2.JPEG" alt="legends dance image" />
+            </div>
+
+            <div class="hobbies-image-left slides1">
+              <img src="images/dance_slides/iasa.JPG" alt="iasa image" />
+            </div>
+
+            <a class="prev" onclick="updateSlides(-1, 1)">&#8249;</a>
+            <a class="next" onclick="updateSlides(1, 1)">&#8250;</a>
           </div>
+          <!-- slideshow end -->
+
           <div class="hobbies-content">
             <h2 class="hobbies-heading">Dance</h2>
             <p>
               Versed in many different styles of dance, including South Indian, Bollywood, Bhangra,
-              and Fusion, I've been practicing dance for the last 15+ of my life.
+              and Fusion, I've been practicing dance for the last 15+ years of my life. From
+              cultural dance shows to nationwide competitions, I've learned and created many dance
+              routines over my career.
             </p>
+            <br />
+            <div class="fun-fact">
+              <ul>
+                <li>I created a South Indian dance on TikTok that went viral</li>
+                <li>I led my collegiate Bollywood dance team to 9th place nationally</li>
+                <li>I had over 3 dance instructors growing up</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="hobbies-box">
-          <div class="hobbies-image-right">
-            <img src="images/Legends Dance Competition-0886.JPEG" alt="AI generated image #2" />
+          <div class="hobbies-slideshow-right">
+            <div class="hobbies-image-right slides2">
+              <img src="images/cooking_slides/IMG_1351.jpg" alt="buffalo chicken sliders image" />
+            </div>
+
+            <div class="hobbies-image-right slides2">
+              <img src="images/cooking_slides/IMG_1325.jpg" alt="chicken burritos image" />
+            </div>
+
+            <div class="hobbies-image-right slides2">
+              <img src="images/cooking_slides/IMG_1875.jpg" alt="tortellini pasta" />
+            </div>
+
+            <div class="hobbies-image-right slides2">
+              <img src="images/cooking_slides/IMG_2255.jpg" alt="potato wrap" />
+            </div>
+
+            <a class="prev" onclick="updateSlides(-1, 2)">&#8249;</a>
+            <a class="next" onclick="updateSlides(1, 2)">&#8250;</a>
           </div>
+
           <div class="hobbies-content-left">
-            <h2 class="hobbies-heading">Volleyball</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tenetur, laboriosam
-              inventore provident tempora, sit ab aut sapiente a adipisci quaerat veniam iusto,
-              blanditiis consequatur omnis suscipit sed dolorum veritatis.
-            </p>
-          </div>
-        </div>
-
-        <div class="hobbies-box">
-          <div class="hobbies-image-left">
-            <img src="images/Legends Dance Competition-0886.JPEG" alt="AI generated image #1" />
-          </div>
-          <div class="hobbies-content">
             <h2 class="hobbies-heading">Cooking</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tenetur, laboriosam
-              inventore provident tempora, sit ab aut sapiente a adipisci quaerat veniam iusto,
-              blanditiis consequatur omnis suscipit sed dolorum veritatis.
+              For the past 4 years, I've been learning new cooking recipes, involving various types
+              of meats. I personally love to make different types of sandwiches and burritos with
+              potato, chicken, and eggs. My future goal is to learn how to make chicken biryani at
+              home.
             </p>
+            <br />
+            <div class="fun-fact">
+              <ul>
+                <li>I made buffalo chicken sliders for 4 of my friends.</li>
+                <li>One of my friend burned popcorn in school causing a hazard.</li>
+                <li>I hate brussel sprouts, raw mushrooms, and raw tomatoes.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="hobbies-box">
-          <div class="hobbies-image-right">
-            <img src="images/Legends Dance Competition-0886.JPEG" alt="AI generated image #2" />
+          <div class="hobbies-slideshow-left">
+            <div class="hobbies-image-left slides3">
+              <img src="images/magic_slides/card_shuffle.webp" alt="card shuffle image" />
+            </div>
+            <div class="hobbies-image-left slides3">
+              <img src="images/magic_slides/penn-teller-fool-us.avif" alt="penn & teller image" />
+            </div>
+            <div class="hobbies-image-left slides3">
+              <img src="images/magic_slides/jason-ladanye.png" alt="jason ladanye image" />
+            </div>
+            <div class="hobbies-image-left slides3">
+              <img src="images/magic_slides/magic_biggest_secrets.png" alt="magic show image" />
+            </div>
+
+            <a class="prev" onclick="updateSlides(-1, 3)">&#8249;</a>
+            <a class="next" onclick="updateSlides(1, 3)">&#8250;</a>
+          </div>
+          <div class="hobbies-content">
+            <h2 class="hobbies-heading">Magic</h2>
+            <p>
+              Ever since I was a kid, I've been interested in the art of deception and sleight of
+              hand. In the early 2000s, I used to watch
+              <i>Breaking the Magician's Code: Magic's Biggest Secrets Finally Revealed</i> and in
+              the late 2010s, I would learn how to do card tricks from YouTube Videos.
+            </p>
+            <br />
+            <div class="fun-fact">
+              <ul>
+                <li>My favorite magic show is Penn and Teller: Fool Us!</li>
+                <li>
+                  I know many sleight of hand techniques: false shuffle, card flick, double lift,
+                  etc.
+                </li>
+                <li>
+                  The first trick I ever learned was from my dad - the penny through elbow trick
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hobbies-box">
+          <div class="hobbies-slideshow-right">
+            <div class="hobbies-image-right slides4">
+              <img src="images/games_slides/warzone.jpg" alt="warzone image" />
+            </div>
+
+            <div class="hobbies-image-right slides4">
+              <img src="images/games_slides/fortnite.jpg" alt="fortnite image" />
+            </div>
+
+            <div class="hobbies-image-right slides4">
+              <img src="images/games_slides/fifa25.png" alt="fifa25 image" />
+            </div>
+
+            <div class="hobbies-image-right slides4">
+              <img src="images/games_slides/bo6.jpg" alt="bo6 image" />
+            </div>
+
+            <a class="prev" onclick="updateSlides(-1, 4)">&#8249;</a>
+            <a class="next" onclick="updateSlides(1, 4)">&#8250;</a>
           </div>
           <div class="hobbies-content-left">
             <h2 class="hobbies-heading">Gaming</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tenetur, laboriosam
-              inventore provident tempora, sit ab aut sapiente a adipisci quaerat veniam iusto,
-              blanditiis consequatur omnis suscipit sed dolorum veritatis.
+              I've been an avid gamer ever since I've been a kid, as I grew up playing Destiny and
+              NBA 2K games. My parents never let me buy action games, like the infamous Call of
+              Duty, as they feared I would become violent.
             </p>
+            <br />
+            <div class="fun-fact">
+              <ul>
+                <li>
+                  I created a MyPlayer in NBA 2K16 named Anthony Edwards, and little did I know that
+                  he would actually become a superstar in the NBA.
+                </li>
+                <li>
+                  During COVID, I used to play Fortnite for at least 3+ hours per day with my
+                  friends.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
